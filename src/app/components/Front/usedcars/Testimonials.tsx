@@ -22,7 +22,7 @@ export default function Testimonials() {
                 key={idx}
                 className="p-6 rounded-xl bg-gray-50 shadow text-left"
               >
-                <p className="text-gray-600 italic mb-4">"{t.quote}"</p>
+                <p className="text-gray-600 italic mb-4">&quot;{t.quote}&quot;</p>
                 <div className="font-semibold">- {t.name}</div>
               </div>
             ))}
