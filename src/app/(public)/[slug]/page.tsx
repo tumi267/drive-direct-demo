@@ -95,7 +95,7 @@ const othercar=(type:string)=>{
 
 const blog=()=>{
   return<>
-  <SampleEditor/>
-  {/* <Blog/> */}
+  {/* <SampleEditor/> */}
+  <Blog/>
   </>
 }
