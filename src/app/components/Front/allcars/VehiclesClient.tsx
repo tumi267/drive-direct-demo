@@ -68,7 +68,7 @@ export default function VehiclesClient({ cars }: VehiclesClientProps) {
    console.log(filteredCars)
 
   return (
-    <div className="flex gap-8 max-w-7xl mx-auto p-4">
+    <div className="flex gap-8 max-w-7xl mx-auto p-4 max-sm:p-0 max-sm:gap-2 max-sm:max-w-[100vw]">
       <VehicleFilter onChange={handleFiltersChange} />
       <CarList cars={filteredCars} />
     </div>

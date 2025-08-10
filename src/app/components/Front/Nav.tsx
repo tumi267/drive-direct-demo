@@ -9,10 +9,10 @@ export default function StoreFrontNav() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   return (
-    <header className="hidden md:block bg-[#252525] shadow-sm">
+    <header className=" md:block bg-[#252525] shadow-sm">
       <div className="container flex items-center justify-between h-16 px-4">
         {/* Desktop navigation */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className=" md:flex items-center gap-6">
           {["New","Used","Buy", "Sell", "Deals", "Vans","News"].map((link) => (
             <Link key={link} href={`/${link.toLowerCase()}`} className="text-white hover:text-600">
               {link}

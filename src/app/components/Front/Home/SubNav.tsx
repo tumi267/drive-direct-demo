@@ -12,7 +12,7 @@ export default function SubNav() {
   const [activeTab, setActiveTab] = useState(tabs[0].label)
 
   return (
-    <div className="bg-[#171717] px-4 py-3  h-[40vh] max-sm:w-[90%]">
+    <div className="bg-[#171717] px-4 py-3  h-[40vh] max-sm:w-[100%]">
     <div className="md:flex items-center gap-x-[10em] max-sm:justify-center ">
     <h1 className="text-white font-semibold text-[48px] max-sm:text-[32px] max-sm:text-center">drive direct</h1>
       <nav

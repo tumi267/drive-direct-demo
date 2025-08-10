@@ -44,7 +44,7 @@ export default function VehicleFilter({ onChange }: VehicleFilterProps) {
   }
 
   return (
-    <div className="bg-white shadow p-6 space-y-6  mt-[1em] ml-[0.5em]">
+    <div className="bg-white shadow p-6 space-y-6  mt-[1em] ml-[0.5em] max-sm:ml-0 max-sm:p-1 max-sm:w-[30vw]">
       {/* Vehicle Type */}
       <div>
         <label className="font-semibold mb-2 block">Vehicle Type</label>
@@ -95,9 +95,9 @@ export default function VehicleFilter({ onChange }: VehicleFilterProps) {
       {/* Payment Type */}
       <div>
         <label className="font-semibold mb-2 block">Payment Type</label>
-        <div className="flex gap-4">
+        <div className="flex gap-4 max-sm:flex-col">
           {paymentTypes.map((pay) => (
-            <label key={pay} className="inline-flex items-center space-x-2">
+            <label key={pay} className="inline-flex items-center  space-x-2">
               <input
                 type="radio"
                 name="paymentType"

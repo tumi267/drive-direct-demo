@@ -9,10 +9,10 @@ type CarListProps = {
 
 export default function CarList({ cars }: CarListProps) {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 p-4 max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 p-4 max-w-7xl mx-auto max-sm:w-[60vw]">
       {cars.length === 0 && <p>No cars found matching filters.</p>}
       {cars.map((car) => (
-        <div key={car.id} className="border w-[20em] h-[20em] rounded p-4 shadow hover:shadow-lg transition">
+        <div key={car.id} className="border w-[20em] h-[20em] max-sm:w-[58vw] rounded p-4 shadow hover:shadow-lg transition">
           <h3 className="text-lg font-bold">{car.name}</h3>
           <p className="text-sm text-gray-600">
             Type: {Array.isArray(car.type) ? car.type.join(", ") : car.type}

@@ -12,8 +12,7 @@ import HowItWorks from '@/app/components/Front/usedcars/HowItWorks'
 import ValueProps from '@/app/components/Front/usedcars/ValueProps'
 import FAQ from '@/app/components/Front/usedcars/FAQ'
 import Blog from '@/app/components/Front/blog/Blog'
-import Deletepost from '@/app/components/Front/blog/Deletepost'
-import SampleEditor from '@/app/components/Front/blog/Blog'
+
 
 
 interface PageProps {
@@ -57,7 +56,7 @@ imgsrc=""
 imagealt="Audi Q4 e-tron"
 cta="sell"
 />
-<p className="mx-auto w-[60%] h-[10em] flex items-center justify-center text-center text-gray-600 text-xl">
+<p className="mx-auto w-[60%] h-[10em] max-sm:mt-[2em] max-sm:mb-[2em] flex items-center justify-center text-center text-gray-600 text-xl">
 For all deals, please contact the dealer for a personalised quote, including
 terms and conditions. Quote is subject to dealer requirements, including
 status and availability. All prices include VAT.
@@ -95,7 +94,7 @@ const othercar=(type:string)=>{
 
 const blog=()=>{
   return<>
-  {/* <SampleEditor/> */}
+
   <Blog/>
   </>
 }

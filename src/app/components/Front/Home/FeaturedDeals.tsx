@@ -12,7 +12,7 @@ export default function FeaturedDeals() {
     <section className="py-12 w-[90vw] ml-auto mr-auto ">
       <div className="container">
         <h2 className="text-2xl font-bold mb-8">Big deals on wheels</h2>
-        <div className="grid md:grid-cols-3 gap-6 max-sm:flex overflow-x-auto scrollbar-hide ">
+        <div className="grid md:grid-cols-3 gap-6 max-sm:flex overflow-x-auto scrollbar-hide w-[100%]">
           {deals.map((deal) => (
             <Card key={deal.title} className="hover:shadow-lg transition">
               <CardHeader className="p-0">
