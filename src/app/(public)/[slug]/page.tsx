@@ -12,6 +12,7 @@ import HowItWorks from '@/app/components/Front/usedcars/HowItWorks'
 import ValueProps from '@/app/components/Front/usedcars/ValueProps'
 import FAQ from '@/app/components/Front/usedcars/FAQ'
 import Blog from '@/app/components/Front/blog/Blog'
+import SampleEditor from '@/app/components/Front/blog/SampleEditor'
 
 
 
@@ -94,7 +95,6 @@ const othercar=(type:string)=>{
 
 const blog=()=>{
   return<>
-
   <Blog/>
   </>
 }
